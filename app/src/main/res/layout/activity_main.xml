@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Include other widget or layout tags here. These are considered
+            "child views" or "children" of the linear layout -->
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator" />
+
+    <RadioGroup
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radio_ninjas"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radio_pirates"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_width="86dp"
+        android:layout_height="69dp"
+        android:inputType="text"
+        android:hint="Weight"/>
+    <EditText
+        android:id="@+id/plain_text_input1"
+        android:layout_width="86dp"
+        android:layout_height="69dp"
+        android:inputType="text"
+    android:hint="Height"/>
+    <EditText
+        android:id="@+id/plain_text_input2"
+        android:layout_width="86dp"
+        android:layout_height="69dp"
+        android:inputType="text"
+        android:hint="Age"/>
+
+
+
+    <Button
+        android:id="@+id/first_button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:text="Calculate" />
+    <TextView
+        android:id="@+id/bmi_result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BMI will appear here"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
